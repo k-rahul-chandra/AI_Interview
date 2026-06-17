@@ -136,24 +136,3 @@ FastAPI WebSockets require a persistent container backend. Fly.io is optimized f
    ```
 
 ---
-
-## 📢 LinkedIn Announcement Post
-
-Here is a release post ready for your network:
-
-```text
-🚀 I just built and deployed Interviewer.AI - a real-time AI Mock Interviewer! 
-
-Interview prep is often passive, but practice needs to be active. I wanted to build an app that behaves like a real human panel: asking deep questions, actively listening, and asking logical follow-ups.
-
-Here is how it works under the hood:
-1️⃣ Captures microphone streams using the Web Audio API and streams binary chunks over WebSockets.
-2️⃣ FastAPI processes the stream and transcribes speech using OpenAI Whisper.
-3️⃣ GPT-4o-mini acts as the interviewer (React Dev, ML, Backend, or HR presets), analyzing answers in context to ask follow-up questions.
-4️⃣ OpenAI TTS streams the audio response back to the client for vocal output.
-5️⃣ Runs fallback SpeechSynthesis / webkitSpeechRecognition client-side if API keys are missing.
-6️⃣ Generates a detailed analytics card scoring Technical Depth, Clarity, and Confidence, highlighting 3 actionable areas for improvement.
-
-Check out the repo here to try it locally or launch your own! 💻👇
-#AI #WebSockets #FastAPI #ReactJS #OpenAI #SpeechRecognition #WebSpeechAPI
-```
