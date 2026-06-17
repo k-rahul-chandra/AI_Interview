@@ -17,8 +17,7 @@ import {
   VolumeX, 
   Loader2,
   AlertCircle,
-  FileText,
-  RefreshCw
+  FileText
 } from 'lucide-react';
 import { useVoice } from './hooks/useVoice';
 import { Waveform } from './components/Waveform';
@@ -74,6 +73,7 @@ export default function App() {
     isRecording,
     isPlaying,
     errorMessage,
+    recordingTime,
     startRecording,
     stopRecording,
     playBase64,
@@ -251,7 +251,7 @@ export default function App() {
   };
 
   // Simulates interview state progression offline or on WebSocket drop
-  const handleOfflineTurn = (text: string) => {
+  const handleOfflineTurn = (_text: string) => {
     setUserTranscript('');
     setIsProcessing(true);
 

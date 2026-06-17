@@ -17,8 +17,6 @@ export const useVoice = (
 
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const recognitionRef = useRef<any>(null);
-  const audioContextRef = useRef<AudioContext | null>(null);
-  const audioIntervalRef = useRef<any>(null);
   const audioElementsRef = useRef<HTMLAudioElement[]>([]);
   const timerRef = useRef<any>(null);
 
