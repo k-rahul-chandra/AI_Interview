@@ -1,0 +1,29 @@
+# Node.js dependencies
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Python virtual environment and outputs
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.project
+
+# Environment files
+.env
+.env.production
+.env.development
+
+# Log files
+*.log
+
+# Editor directories
+.vscode/
+.idea/
+.DS_Store
